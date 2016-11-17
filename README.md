@@ -1,3 +1,3 @@
 # Hello
 HelloWorld
-[![Build Status](https://travis-ci.org/fresh-ash/Hello.svg?branch=master)](https://travis-ci.org/fresh-ash/Hello)
+[![CircleCI](https://circleci.com/gh/fresh-ash/Hello.svg?style=svg)](https://circleci.com/gh/fresh-ash/Hello)
