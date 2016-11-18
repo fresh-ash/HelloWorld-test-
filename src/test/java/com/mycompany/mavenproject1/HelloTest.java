@@ -5,6 +5,7 @@
  */
 package com.mycompany.mavenproject1;
 
+import java.util.Date;
 import java.util.HashSet;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -24,18 +25,7 @@ public class HelloTest {
     @Test
     public void testTimesOfDay() {
         System.out.println("timesOfDay");
-        HashSet<String> expResult = new HashSet<>();
-        expResult.add("morning");
-        expResult.add("day");
-        expResult.add("evening");
-        expResult.add("night");
-        String result = Hello.timesOfDay();
-        if (expResult.contains(result)){
-            System.out.println("Test is good!");
-        }
-        else{
-            fail("The test case is a prototype.");
-        }
+        
     }
     
 }

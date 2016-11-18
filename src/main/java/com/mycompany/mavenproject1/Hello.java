@@ -14,10 +14,9 @@ import org.apache.log4j.Logger;
  * @author sergei
  */
 public class Hello {
-    public static String timesOfDay(){
+    public static String timesOfDay(Date date){
         Logger log = Logger.getLogger(Hello.class);
         SimpleDateFormat dateFormat = new SimpleDateFormat("HH");
-        Date date = new Date();
         int time = Integer.parseInt(dateFormat.format(date));
         if ((time > 6) && (time <= 9)){
             log.info("Morning message");
