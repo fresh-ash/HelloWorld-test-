@@ -5,7 +5,7 @@
  */
 package com.mycompany.mavenproject1;
 
-import java.util.Locale;
+
 import java.util.ResourceBundle;
 
 /**
@@ -14,10 +14,7 @@ import java.util.ResourceBundle;
  */
 public class MainHello {
     public static void main(String[] args){
-        Locale loc = new Locale("en", "GB");
         ResourceBundle bundle = ResourceBundle.getBundle("Message");
         System.out.println(bundle.getString(Hello.timesOfDay()));
-        ResourceBundle bundle1 = ResourceBundle.getBundle("Message", loc);
-        System.out.println(bundle1.getString(Hello.timesOfDay()));
     }
 }
