@@ -4,4 +4,5 @@ HelloWorld
 
 
 
-This programm print "Hello, {times of day}". Also this use local of user.
+This programm print "Hello, {times of day}". Also this use local of user for 
+change language of messages.
