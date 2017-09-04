@@ -1,6 +1,6 @@
 # Hello
 HelloWorld
-[![CircleCI](https://circleci.com/gh/fresh-ash/Hello.svg?style=svg)](https://circleci.com/gh/fresh-ash/Hello)
+[![CircleCI](https://circleci.com/gh/fresh-ash/HelloWorld-test-.svg?style=svg)](https://circleci.com/gh/fresh-ash/HelloWorld-test-)
 
 
 
