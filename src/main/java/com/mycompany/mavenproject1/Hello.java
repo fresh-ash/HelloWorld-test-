@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 /**
  *
  * @author sergei
+ *  Logic 
  */
 public class Hello {
     public static String timesOfDay(Date date){
