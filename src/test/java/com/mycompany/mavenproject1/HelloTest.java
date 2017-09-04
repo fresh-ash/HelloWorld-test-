@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 public class HelloTest {
     
     /**
-     * Test of timesOfDay method, of class Hello.
+     * Test of timesOfDay method, of class Hello. It isn't good idea.
      */
     @Test
     public void testTimesOfDay() {
