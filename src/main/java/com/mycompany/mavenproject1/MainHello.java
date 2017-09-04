@@ -14,6 +14,7 @@ import java.util.ResourceBundle;
 /**
  *
  * @author sergei
+ * StartApp
  */
 public class MainHello {
     public static void main(String[] args){
