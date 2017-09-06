@@ -5,9 +5,9 @@
  */
 package com.mycompany.mavenproject1;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import org.apache.log4j.Logger;
+
+import java.util.Calendar;
 
 /**
  *
@@ -15,19 +15,20 @@ import org.apache.log4j.Logger;
  *  Logic 
  */
 public class Hello {
-    public static String timesOfDay(Date date){
+    public static String timesOfDay(Calendar calendar){
+
         Logger log = Logger.getLogger(Hello.class);
-        SimpleDateFormat dateFormat = new SimpleDateFormat("HH");
-        int time = Integer.parseInt(dateFormat.format(date));
-        if ((time > 6) && (time <= 9)){
+        int date = calendar.get(Calendar.HOUR_OF_DAY);
+
+        if ((date >= 6) && (date < 9)){
             log.info("Morning message");
             return "morning";
         }
-        else if ((time > 9) && (time <= 19)){
+        else if ((date >= 9) && (date < 19)){
             log.info("Day message");
             return "day";
         }
-        else if ((time > 19) && (time <= 23)){
+        else if ((date >= 19) && (date < 23)){
             log.info("Evening message");
             return "evening";
         }
