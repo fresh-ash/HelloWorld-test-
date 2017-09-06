@@ -5,7 +5,9 @@
  */
 package com.mycompany.mavenproject1;
 
-import java.util.Date;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -21,25 +23,25 @@ public class HelloTest {
     @Test
     public void testTimesOfDay() {
         System.out.println("timesOfDay");
-        Date date = new Date(0,0,0,12,30);
+        Calendar date = new GregorianCalendar(2017, 9, 6, 9,10, 0);
         String expResult = "day";
         String result = Hello.timesOfDay(date);
         // 
         assertEquals(expResult, result);
         //
-        date = new Date(0,0,0,1,0);
+        date = new GregorianCalendar(2017, 9, 6, 0,0, 0);
         expResult = "night";
         result = Hello.timesOfDay(date);
         //
         assertEquals(expResult, result);
         //
-        date = new Date(0,0,0,7,0);
+        date = new GregorianCalendar(2017, 9, 6, 6, 0, 0);
         expResult = "morning";
         result = Hello.timesOfDay(date);
         //
         assertEquals(expResult, result);
         //
-        date = new Date(0,0,0,20,0);
+        date = new GregorianCalendar(2017, 9, 6, 19,10, 00);
         expResult = "evening";
         result = Hello.timesOfDay(date);
         //
