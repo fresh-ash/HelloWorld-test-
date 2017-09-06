@@ -7,7 +7,7 @@ package com.mycompany.mavenproject1;
 
 
 
-import java.util.Date;
+import java.util.Calendar;
 import java.util.ResourceBundle;
 
 
@@ -19,7 +19,9 @@ import java.util.ResourceBundle;
 public class MainHello {
     public static void main(String[] args){
         ResourceBundle bundle = ResourceBundle.getBundle("Message");
-        System.out.println(bundle.getString(Hello.timesOfDay(new Date())));
+        Calendar date = Calendar.getInstance();
+        System.out.println(bundle.getString(Hello.timesOfDay(date)));
         
      }
 }
+
