@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package com.mycompany.mavenproject1;
-
-
-
 import java.util.Calendar;
 import java.util.ResourceBundle;
 
@@ -24,4 +21,5 @@ public class MainHello {
         
      }
 }
+
 
